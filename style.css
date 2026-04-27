@@ -77,3 +77,13 @@ body {
   max-width: 800px;
   margin: 40px auto;
 }
+img {
+  max-width: 100%;
+}
+
+.card img {
+  width: 120px !important;
+  height: 120px !important;
+  object-fit: cover;
+  border-radius: 8px;
+}
