@@ -1,68 +1,50 @@
-@import url("components/container.css");
-@import url("components/button.css");
-@import url("components/banner.css");
-@import url("components/card.css");
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>SafeGym</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
+  </head>
 
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-}
+  <body>
 
-.container {
-  width: 900px;
-  margin: 0 auto;
-}
+    <div class="banner">
+      <div class="container">
+        <h1>SafeGym</h1>
+        <h2>Train with confidence</h2>
+        <a href="#typeform" class="btn-blue">Discover the app</a>
+      </div>
+    </div>
 
-/* CARDS */
-.cards {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-}
+    <div class="container">
+      <h2>About</h2>
+      <p>SafeGym is an app designed to help women feel safer at the gym.</p>
 
-.card {
-  display: flex;
-  align-items: center;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 30%;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-  transition: 0.3s;
-}
+      <h2>Our Locations</h2>
 
-.card:hover {
-  transform: translateY(-5px);
-}
+      <div class="cards">
+        <div class="card">
+          <img src="images/paris.jpg" alt="Paris">
+          <h3>Paris</h3>
+        </div>
 
-.card img {
-  width: 120px;
-  height: 120px;
-  object-fit: cover;
-  border-radius: 8px;
-}
+        <div class="card">
+          <img src="images/london.jpg" alt="London">
+          <h3>London</h3>
+        </div>
 
-.card h3 {
-  padding-left: 20px;
-  flex-grow: 1;
-}
+        <div class="card">
+          <img src="images/newyork.jpg" alt="New York">
+          <h3>New York</h3>
+        </div>
+      </div>
+    </div>
 
-/* BANNER */
-.banner {
-  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("../images/background.jpg");
-  background-size: cover;
-  background-position: center;
-  padding: 150px 0;
-  color: white;
-}
+    <div class="container" id="typeform">
+      <h2>Try SafeGym</h2>
+      <div data-tf-live="01KQ7FB2X6H8WEWSKEMM5FHT22"></div>
+    </div>
 
-.banner h1,
-.banner h2 {
-  color: white;
-}[data-tf-live] {
-  min-height: 600px;
-}[data-tf-live] {
-  min-height: 600px;
-  max-width: 800px;
-  margin: 40px auto;
-}
+    <script src="https://embed.typeform.com/next/embed.js"></script>
+  </body>
+</html>
